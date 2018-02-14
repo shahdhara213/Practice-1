@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/form.css">
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+       
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h2 class="title">Please fill the form.</h1>
+            <form action="javascript:;" onsubmit="document.getElementById('success').innerHTML = 'Thank you for submitting your details'">
+                First name : 
+                <input type="text" name="FirstName" required placeholder="firstname" pattern="[A-Za-z]*"><br>
+                Last name : 
+                <input type="text" name="LasttName" required placeholder="lastname" pattern="[A-Za-z]*"><br>
+                Email ID : 
+                <input type="email" name="EmailId" required placeholder="abc@xyz.com" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"><br>
+                Gender : 
+                <label class="radio-inline"><input type="radio" name="gender" required value="Male"> Male</label>&nbsp;
+                <label class="radio-inline"><input type="radio" name="gender" required value="Female"> Female</label>&nbsp;
+                <label class="radio-inline"><input type="radio" name="gender" required value="Other"> Other</label><br>
+                State : 
+                <select name="State" size="1">
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      </select><br><br>
+                      <input type="submit" value="submit">
+                      <p id="success"></p>
+            </form>
+        </div>
+    </body>
+</html>

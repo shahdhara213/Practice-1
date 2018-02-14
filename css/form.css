@@ -1,0 +1,39 @@
+@media (max-width: 575.98px) {
+    form > input, select {
+        border: 1px solid rgb(238, 238, 238);
+    }
+
+    input[type=submit]{
+        margin: auto;
+        display: block;
+    }
+}
+form {
+    line-height: 20px;
+}
+
+input, select {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+input[type=email] {
+    margin-left: 33px;
+}
+
+input[type=radio] {
+    margin-left: 0px;
+}
+
+input[value=Male] {
+    margin-left: 38px;
+}
+
+input[type=submit]{
+    height: 30px;
+    width: 125px;
+}
+
+select {
+    margin-left: 53px;
+}
